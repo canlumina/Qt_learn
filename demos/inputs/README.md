@@ -1,0 +1,12 @@
+# 输入控件示例
+
+本目录用于存放输入窗口部件的示例，例如 QLineEdit、QTextEdit、QSpinBox 和 QComboBox。目前仅预留目录，尚未添加示例页面。
+
+新增示例时：
+
+1. 在本目录创建独立的 `.h/.cpp`，页面通常继承 QWidget；为新增函数提供中文注释。
+2. 在根目录 `CMakeLists.txt` 的 `add_executable(learn ...)` 输入控件区域添加两个文件的路径。
+3. 在 `mainwindow.cpp` 中包含 `demos/inputs/xxx.h`，并调用 `addDemo("控件名称", new 示例类(this))` 注册页面。
+4. 在 `docs/` 中记录开发日志，并更新根目录 README 的文档索引。
+
+请使用与按钮示例不同的类名和文件名，便于 Qt AUTOMOC/AUTOUIC 生成文件和定位源码。

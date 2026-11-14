@@ -43,17 +43,19 @@ add_executable(learn
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
-    # 每个控件的练习各占一对 .h/.cpp，新增示例时在这里追加
-    demos/pushbuttondemo.cpp
-    demos/pushbuttondemo.h
-    demos/radiobuttondemo.cpp
-    demos/radiobuttondemo.h
-    demos/checkboxdemo.cpp
-    demos/checkboxdemo.h
-    demos/commandlinkbutton.cpp
-    demos/commandlinkbutton.h
-    demos/dialogbuttonbox.cpp
-    demos/dialogbuttonbox.h
+    # 按控件类型分目录，每个示例各占一对 .h/.cpp
+    # 按钮控件
+    demos/buttons/pushbuttondemo.cpp
+    demos/buttons/pushbuttondemo.h
+    demos/buttons/radiobuttondemo.cpp
+    demos/buttons/radiobuttondemo.h
+    demos/buttons/checkboxdemo.cpp
+    demos/buttons/checkboxdemo.h
+    demos/buttons/commandlinkbutton.cpp
+    demos/buttons/commandlinkbutton.h
+    demos/buttons/dialogbuttonbox.cpp
+    demos/buttons/dialogbuttonbox.h
+    # 输入控件：后续在 demos/inputs/ 下新增文件，并在这里追加
     res.qrc
     style.qss
 )

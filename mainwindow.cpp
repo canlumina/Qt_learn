@@ -1,16 +1,21 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include "demos/pushbuttondemo.h"
-#include "demos/radiobuttondemo.h"
-#include "demos/checkboxdemo.h"
-#include "demos/commandlinkbutton.h"
-#include "demos/dialogbuttonbox.h"
+#include "demos/buttons/pushbuttondemo.h"
+#include "demos/buttons/radiobuttondemo.h"
+#include "demos/buttons/checkboxdemo.h"
+#include "demos/buttons/commandlinkbutton.h"
+#include "demos/buttons/dialogbuttonbox.h"
 
 #include <QHBoxLayout>
 #include <QListWidget>
 #include <QStackedWidget>
 
+/**
+ * @brief 初始化主窗口布局并注册各分类的示例页面
+ * @param parent 父窗口，可为空；父对象负责管理本窗口的生命周期
+ * @note 无返回值，须在 GUI 线程且 QApplication 创建后调用；子控件由 Qt 管理。
+ */
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -36,7 +41,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     /* ---- 示例注册处 ----
      * 新增一个示例只需三步：
-     *   1. 在 demos/ 下新建 xxxdemo.h / xxxdemo.cpp（继承 QWidget）
+     *   1. 在 demos/ 对应分类下新建 xxxdemo.h / xxxdemo.cpp（通常继承 QWidget）
      *   2. 把这两个文件加进 CMakeLists.txt 的 add_executable()
      *   3. 在本文件 #include 它，并在下面加一行 addDemo() */
     addDemo("QPushButton", new PushButtonDemo(this));

@@ -13,7 +13,7 @@ class QListWidget;
 class QStackedWidget;
 
 /* 主窗口只负责“外壳”：左侧是示例目录，右侧显示选中的示例页面。
- * 每个控件的练习代码都在 demos/ 目录下各自的文件里。 */
+ * 每个控件的练习代码按类型放在 demos/ 的分类子目录中。 */
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
