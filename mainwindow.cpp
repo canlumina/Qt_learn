@@ -5,6 +5,7 @@
 #include "demos/radiobuttondemo.h"
 #include "demos/checkboxdemo.h"
 #include "demos/commandlinkbutton.h"
+#include "demos/dialogbuttonbox.h"
 
 #include <QHBoxLayout>
 #include <QListWidget>
@@ -42,6 +43,7 @@ MainWindow::MainWindow(QWidget *parent)
     addDemo("QRadioButton", new RadioButtonDemo(this));
     addDemo("QCheckBox", new CheckBoxDemo(this));
     addDemo("QCommandLinkButton", new CommandLinkButton(this));
+    addDemo("QDialogButtonBox", new DialogButtonBox(this));
 
     listWidget->setCurrentRow(0);
 }

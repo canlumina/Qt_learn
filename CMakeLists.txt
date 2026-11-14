@@ -52,6 +52,8 @@ add_executable(learn
     demos/checkboxdemo.h
     demos/commandlinkbutton.cpp
     demos/commandlinkbutton.h
+    demos/dialogbuttonbox.cpp
+    demos/dialogbuttonbox.h
     res.qrc
     style.qss
 )
