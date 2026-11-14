@@ -43,6 +43,8 @@ add_executable(learn
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    res.qrc
+    style.qss
     # 按控件类型分目录，每个示例各占一对 .h/.cpp
     # 按钮控件
     demos/buttons/pushbuttondemo.cpp
@@ -56,8 +58,8 @@ add_executable(learn
     demos/buttons/dialogbuttonbox.cpp
     demos/buttons/dialogbuttonbox.h
     # 输入控件：后续在 demos/inputs/ 下新增文件，并在这里追加
-    res.qrc
-    style.qss
+    demos/inputs/combobox.cpp
+    demos/inputs/combobox.h
 )
 
 target_link_libraries(learn

@@ -1,6 +1,10 @@
 # 输入控件示例
 
-本目录用于存放输入窗口部件的示例，例如 QLineEdit、QTextEdit、QSpinBox 和 QComboBox。目前仅预留目录，尚未添加示例页面。
+本目录用于存放输入窗口部件的示例，例如 QLineEdit、QTextEdit、QSpinBox 和 QComboBox。
+
+已有示例：
+
+- `combobox.h / .cpp`：QComboBox，切换选项时用 `qDebug()` 输出当前选项。
 
 新增示例时：
 
