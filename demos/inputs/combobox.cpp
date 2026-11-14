@@ -12,6 +12,8 @@ ComboBox::ComboBox(QWidget *parent)
     comboBox->addItem("广州");
 
     connect(comboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &ComboBox::comboBoxIndexChanged);
+
+    // connect(comboBox, &QComboBox::currentIndexChanged, this, &ComboBox::comboBoxIndexChanged);
     // connect(comboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(comboBoxIndexChanged(int)));
 }
 
