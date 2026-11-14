@@ -50,6 +50,8 @@ add_executable(learn
     demos/radiobuttondemo.h
     demos/checkboxdemo.cpp
     demos/checkboxdemo.h
+    demos/commandlinkbutton.cpp
+    demos/commandlinkbutton.h
     res.qrc
     style.qss
 )

@@ -4,6 +4,7 @@
 #include "demos/pushbuttondemo.h"
 #include "demos/radiobuttondemo.h"
 #include "demos/checkboxdemo.h"
+#include "demos/commandlinkbutton.h"
 
 #include <QHBoxLayout>
 #include <QListWidget>
@@ -40,6 +41,7 @@ MainWindow::MainWindow(QWidget *parent)
     addDemo("QPushButton", new PushButtonDemo(this));
     addDemo("QRadioButton", new RadioButtonDemo(this));
     addDemo("QCheckBox", new CheckBoxDemo(this));
+    addDemo("QCommandLinkButton", new CommandLinkButton(this));
 
     listWidget->setCurrentRow(0);
 }
