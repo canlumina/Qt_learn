@@ -1,0 +1,70 @@
+# 构建目录（CMake 预设、Qt Creator 和其他本地构建）
+/build/
+/build-*/
+/cmake-build-*/
+/out/
+
+# CMake / Ninja 在源码目录构建时生成的文件
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+Testing/
+compile_commands.json
+build.ninja
+rules.ninja
+.ninja_deps
+.ninja_log
+/learn
+
+# Qt 自动生成文件及 qmake 本地构建文件
+*_autogen/
+moc_*.cpp
+moc_*.h
+ui_*.h
+qrc_*.cpp
+.qmake.stash
+.qmake.cache
+Makefile.Debug
+Makefile.Release
+
+# 编译产物和调试文件
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+*.dll
+*.dylib
+*.exe
+*.elf
+*.bin
+*.hex
+*.map
+*.pdb
+*.dSYM/
+
+# 编辑器个人配置；共享 CMakePresets.json 保留在版本控制中
+/.qtcreator/
+/.vscode/
+/.idea/
+CMakeUserPresets.json
+*.user
+*.user.*
+
+# 缓存、日志及编辑器临时文件
+.cache/
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 本地环境变量文件
+.env
+.env.*
+!.env.example
+!.env.sample

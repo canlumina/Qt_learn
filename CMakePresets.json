@@ -1,0 +1,41 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": { "major": 3, "minor": 19, "patch": 0 },
+    "configurePresets": [
+        {
+            "name": "qt6-desktop",
+            "displayName": "Qt 6.11.1 (desktop)",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/qt6",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_PREFIX_PATH": "/home/yangcan/program/Qt/6.11.1/gcc_64"
+            }
+        },
+        {
+            "name": "qt5-desktop",
+            "displayName": "Qt 5.15.2 (desktop)",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/qt5",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_PREFIX_PATH": "/home/yangcan/program/Qt/5.15.2/gcc_64"
+            }
+        },
+        {
+            "name": "imx6ull",
+            "displayName": "i.MX6ULL (buildroot Qt 5.11.3, cross)",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/imx6ull",
+            "toolchainFile": "${sourceDir}/cmake/toolchain-imx6ull.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ],
+    "buildPresets": [
+        { "name": "qt6-desktop", "configurePreset": "qt6-desktop" },
+        { "name": "qt5-desktop", "configurePreset": "qt5-desktop" },
+        { "name": "imx6ull",     "configurePreset": "imx6ull" }
+    ]
+}
