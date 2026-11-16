@@ -5,6 +5,7 @@
 已有示例：
 
 - `combobox.h / .cpp`：QComboBox，切换选项时用 `qDebug()` 输出当前选项。
+- `lineedit.h / .cpp`：QLineEdit，点击“确认”后在标签上显示输入的文本并清空输入框。
 
 新增示例时：
 

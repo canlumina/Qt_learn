@@ -60,6 +60,8 @@ add_executable(learn
     # 输入控件：后续在 demos/inputs/ 下新增文件，并在这里追加
     demos/inputs/combobox.cpp
     demos/inputs/combobox.h
+    demos/inputs/lineedit.cpp
+    demos/inputs/lineedit.h
 )
 
 target_link_libraries(learn

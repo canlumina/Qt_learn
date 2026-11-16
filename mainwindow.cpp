@@ -7,6 +7,7 @@
 #include "demos/buttons/commandlinkbutton.h"
 #include "demos/buttons/dialogbuttonbox.h"
 #include "demos/inputs/combobox.h"
+#include "demos/inputs/lineedit.h"
 
 #include <QHBoxLayout>
 #include <QListWidget>
@@ -51,6 +52,7 @@ MainWindow::MainWindow(QWidget *parent)
     addDemo("QCommandLinkButton", new CommandLinkButton(this));
     addDemo("QDialogButtonBox", new DialogButtonBox(this));
     addDemo("QComboBox", new ComboBox(this));
+    addDemo("QLineEdit", new LineEdit(this));
 
     listWidget->setCurrentRow(0);
 }

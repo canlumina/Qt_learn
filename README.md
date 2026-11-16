@@ -5,7 +5,7 @@ Qt Widgets 控件学习示例，采用左侧目录、右侧示例页面的结构
 ## 示例目录
 
 - `demos/buttons/`：QPushButton、QRadioButton、QCheckBox、QCommandLinkButton、QDialogButtonBox。
-- `demos/inputs/`：QComboBox；后续的输入控件也放这里，新增方法见 [目录说明](demos/inputs/README.md)。
+- `demos/inputs/`：QComboBox、QLineEdit；后续的输入控件也放这里，新增方法见 [目录说明](demos/inputs/README.md)。
 
 各示例保持独立的 `.h/.cpp`，构建文件中显式列出源码，主窗口通过 `addDemo()` 注册页面。历史学习日志中的 `demos/xxx` 路径现已迁移为 `demos/buttons/xxx`。
 
@@ -17,3 +17,4 @@ Qt Widgets 控件学习示例，采用左侧目录、右侧示例页面的结构
 - [QCommandLinkButton：点击按钮打开本地目录](docs/2026-11-14-04-QCommandLinkButton打开目录.md)
 - [QDialogButtonBox：标准按钮与自定义按钮](docs/2026-11-14-05-QDialogButtonBox标准与自定义按钮.md)
 - [QComboBox：选择项变化时输出当前省份](docs/2026-11-14-06-QComboBox选中项切换.md)
+- [QLineEdit：读取输入的文本并显示](docs/2026-11-16-07-QLineEdit读取输入文本.md)
