@@ -11,6 +11,7 @@ Qt Widgets 控件学习示例，采用左侧目录、右侧示例页面的结构
 
 ## 学习文档
 
+- [Qt Widgets 基本控件速查](docs/Qt基本控件速查.md)：按分类整理的控件说明，带学习进度标记
 - [模块化拆分：每个控件一对文件](docs/2026-11-13-01-模块化拆分.md)
 - [QRadioButton：用样式表换成开关图片](docs/2026-11-13-02-QRadioButton与资源文件.md)
 - [QCheckBox：三态切换与图片样式](docs/2026-11-14-03-QCheckBox三态与样式表.md)
