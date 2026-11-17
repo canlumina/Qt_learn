@@ -8,6 +8,7 @@
 #include "demos/buttons/dialogbuttonbox.h"
 #include "demos/inputs/combobox.h"
 #include "demos/inputs/lineedit.h"
+#include "demos/inputs/spinbox.h"
 
 #include <QHBoxLayout>
 #include <QListWidget>
@@ -53,6 +54,7 @@ MainWindow::MainWindow(QWidget *parent)
     addDemo("QDialogButtonBox", new DialogButtonBox(this));
     addDemo("QComboBox", new ComboBox(this));
     addDemo("QLineEdit", new LineEdit(this));
+    addDemo("QSpinBox", new SpinBox(this));
 
     listWidget->setCurrentRow(0);
 }

@@ -62,6 +62,8 @@ add_executable(learn
     demos/inputs/combobox.h
     demos/inputs/lineedit.cpp
     demos/inputs/lineedit.h
+    demos/inputs/spinbox.cpp
+    demos/inputs/spinbox.h
 )
 
 target_link_libraries(learn
