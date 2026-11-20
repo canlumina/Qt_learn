@@ -1,7 +1,23 @@
 {
     "version": 3,
-    "cmakeMinimumRequired": { "major": 3, "minor": 19, "patch": 0 },
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 19,
+        "patch": 0
+    },
     "configurePresets": [
+        {
+            "name": "qt6-local",
+            "displayName": "Qt 6.12.0 (local GCC 13.3)",
+            "description": "本机 Qt 桌面开发：Debug、Ninja 和编译命令导出",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/qt6-local",
+            "toolchainFile": "${sourceDir}/cmake/toolchain-qt6-local.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": true
+            }
+        },
         {
             "name": "qt6-desktop",
             "displayName": "Qt 6.11.1 (desktop)",
@@ -31,11 +47,40 @@
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release"
             }
+        },
+        {
+            "name": "使用工具链文件配置预设",
+            "displayName": "本机 Qt 6.12.0（兼容原 VS Code 预设）",
+            "description": "继承 qt6-local，兼容 VS Code 已保存的预设选择",
+            "inherits": "qt6-local",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}"
+            }
         }
     ],
     "buildPresets": [
-        { "name": "qt6-desktop", "configurePreset": "qt6-desktop" },
-        { "name": "qt5-desktop", "configurePreset": "qt5-desktop" },
-        { "name": "imx6ull",     "configurePreset": "imx6ull" }
+        {
+            "name": "使用工具链文件配置预设",
+            "configurePreset": "使用工具链文件配置预设"
+        },
+        {
+            "name": "qt6-local",
+            "configurePreset": "qt6-local"
+        },
+        {
+            "name": "qt6-desktop",
+            "configurePreset": "qt6-desktop"
+        },
+        {
+            "name": "qt5-desktop",
+            "configurePreset": "qt5-desktop"
+        },
+        {
+            "name": "imx6ull",
+            "configurePreset": "imx6ull"
+        }
     ]
 }
