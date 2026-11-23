@@ -32,7 +32,7 @@ CMake Tools 的配置预设和构建预设均建议选择 `qt6-local`。
 ## 示例目录
 
 - `demos/buttons/`：QPushButton、QRadioButton、QCheckBox、QCommandLinkButton、QDialogButtonBox。
-- `demos/inputs/`：QComboBox、QLineEdit、QSpinBox；后续的输入控件也放这里，新增方法见 [目录说明](demos/inputs/README.md)。
+- `demos/inputs/`：QComboBox、QLineEdit、QSpinBox、QTextEdit；后续的输入控件也放这里，新增方法见 [目录说明](demos/inputs/README.md)。
 
 各示例保持独立的 `.h/.cpp`，构建文件中显式列出源码，主窗口通过 `addDemo()` 注册页面。历史学习日志中的 `demos/xxx` 路径现已迁移为 `demos/buttons/xxx`。
 
@@ -47,3 +47,4 @@ CMake Tools 的配置预设和构建预设均建议选择 `qt6-local`。
 - [QComboBox：选择项变化时输出当前省份](docs/2026-11-14-06-QComboBox选中项切换.md)
 - [QLineEdit：读取输入的文本并显示](docs/2026-11-16-07-QLineEdit读取输入文本.md)
 - [QSpinBox：用数值框调节窗口不透明度](docs/2026-11-17-08-QSpinBox调节窗口不透明度.md)
+- [QTextEdit：多行文本的全选与清除](docs/2026-11-23-09-QTextEdit全选与清除.md)

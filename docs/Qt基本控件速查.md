@@ -54,7 +54,7 @@
 | QComboBox ✅ | ★★★ | 下拉选择框 | 从固定的一组选项里选一个：省份、语言、串口号 | `currentIndexChanged()`、`currentText()`、`addItems()` |
 | QSpinBox ✅ | ★★★ | 整数输入框，带上下箭头 | 数量、年龄、端口号等有范围的整数 | `value()`、`valueChanged()`、`setRange()` |
 | QDoubleSpinBox | ★★ | 小数输入框 | 价格、温度、比例等浮点数 | 同上，另有 `setDecimals()` |
-| QTextEdit | ★★★ | 多行富文本编辑框 | 备注、聊天输入、显示带格式的内容 | `toPlainText()`、`setHtml()`、`append()` |
+| QTextEdit ✅ | ★★★ | 多行富文本编辑框 | 备注、聊天输入、显示带格式的内容 | `toPlainText()`、`setHtml()`、`append()` |
 | QPlainTextEdit | ★★★ | 多行纯文本编辑框 | 日志输出、代码或配置文本，大文本性能比 QTextEdit 好 | `appendPlainText()`、`toPlainText()` |
 | QSlider | ★★ | 滑块 | 音量、亮度、进度拖动等不需要精确数值的调节 | `valueChanged()`、`setRange()` |
 | QDateEdit / QTimeEdit / QDateTimeEdit | ★★ | 日期、时间输入框 | 生日、预约时间、查询的起止日期 | `date()`、`dateChanged()`、`setCalendarPopup(true)` |
@@ -191,7 +191,7 @@ Qt 已经做好的标准弹窗，一行代码就能用。
 | 类别 | 控件 |
 | --- | --- |
 | 按钮 | QPushButton ✅、QCheckBox ✅、QRadioButton ✅ |
-| 输入 | QLineEdit ✅、QComboBox ✅、QSpinBox ✅、QTextEdit、QPlainTextEdit |
+| 输入 | QLineEdit ✅、QComboBox ✅、QSpinBox ✅、QTextEdit ✅、QPlainTextEdit |
 | 显示 | QLabel、QProgressBar |
 | 布局 | QVBoxLayout、QHBoxLayout、QGridLayout、QFormLayout |
 | 容器 | QGroupBox、QTabWidget、QStackedWidget |
@@ -204,7 +204,7 @@ Qt 已经做好的标准弹窗，一行代码就能用。
 
 按 `learn/demos` 现在的进度往下排：
 
-1. **输入类补完**（放 `demos/inputs/`）：QTextEdit / QPlainTextEdit → QSlider → QDateTimeEdit
+1. **输入类补完**（放 `demos/inputs/`）：QPlainTextEdit → QSlider → QDateTimeEdit
 2. **显示类**：QLabel（文字和图片）→ QProgressBar（配合 QTimer）
 3. **布局**：四种布局各写一个示例，重点是嵌套和弹簧
 4. **容器类**：QGroupBox → QTabWidget → QStackedWidget → QScrollArea → QSplitter

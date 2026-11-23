@@ -7,6 +7,7 @@
 - `combobox.h / .cpp`：QComboBox，切换选项时用 `qDebug()` 输出当前选项。
 - `lineedit.h / .cpp`：QLineEdit，点击“确认”后在标签上显示输入的文本并清空输入框。
 - `spinbox.h / .cpp`：QSpinBox，数值变化时设置主窗口的不透明度；Wayland 桌面和 linuxfb 下没有可见效果，原因见开发日志。
+- `textedit.h / .cpp`：QTextEdit，多行文本输入，通过按钮全选或清除内容。
 
 新增示例时：
 
