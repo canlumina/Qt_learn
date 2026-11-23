@@ -74,6 +74,9 @@ target_link_libraries(learn
         Qt${QT_VERSION_MAJOR}::Widgets
 )
 
+# 分类参考示例独立构建，便于逐个学习，继续保留原 learn 练习程序。
+add_subdirectory(examples)
+
 install(TARGETS learn
     BUNDLE  DESTINATION .
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}

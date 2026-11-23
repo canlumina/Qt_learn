@@ -1,0 +1,9 @@
+BasedOnStyle: WebKit
+IndentWidth: 4
+ColumnLimit: 110
+PointerAlignment: Right
+SortIncludes: CaseSensitive
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+ReflowComments: false

@@ -31,12 +31,17 @@ CMake Tools 的配置预设和构建预设均建议选择 `qt6-local`。
 
 ## 示例目录
 
+- `examples/`：剩余 52 个不同类的独立参考示例，每类一对 `.h/.cpp`，运行目标为 `widget_examples`；[建议学习路线与完整代码教程](docs/examples/README.md)。
+
 - `demos/buttons/`：QPushButton、QRadioButton、QCheckBox、QCommandLinkButton、QDialogButtonBox。
 - `demos/inputs/`：QComboBox、QLineEdit、QSpinBox、QTextEdit；后续的输入控件也放这里，新增方法见 [目录说明](demos/inputs/README.md)。
 
 各示例保持独立的 `.h/.cpp`，构建文件中显式列出源码，主窗口通过 `addDemo()` 注册页面。历史学习日志中的 `demos/xxx` 路径现已迁移为 `demos/buttons/xxx`。
 
 ## 学习文档
+
+- [剩余控件学习路线与示例教程](docs/examples/README.md)：用途、常用方式、操作步骤，以及全部 `.h/.cpp` 代码。
+- [分类示例库开发记录](docs/2026-11-23-11-剩余控件分类示例.md)：覆盖范围和验证结果。
 
 - [Qt Widgets 基本控件速查](docs/Qt基本控件速查.md)：按分类整理的控件说明，带学习进度标记
 - [模块化拆分：每个控件一对文件](docs/2026-11-13-01-模块化拆分.md)
