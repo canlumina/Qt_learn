@@ -8,7 +8,7 @@
 - ★★ 中频：特定场景常用，用到再学
 - ★ 低频：知道有这个东西即可
 
-**学习进度**：✅ 表示 `learn/demos` 里已经写过示例。
+**学习进度**：控件名称前的 ✅ 表示 `learn/demos` 里已经写过示例。每完成一个 demo，同步更新对应控件的标记和文末学习进度。
 
 ---
 
@@ -30,12 +30,12 @@
 
 | 控件 | 频率 | 是什么 | 什么时候用 | 常用信号 / 方法 |
 | --- | --- | --- | --- | --- |
-| QPushButton ✅ | ★★★ | 普通按钮 | 确定、取消、提交、打开等一切“点击执行”的动作 | `clicked()` |
-| QCheckBox ✅ | ★★★ | 复选框，可多选 | 多个选项互不影响：记住密码、同意协议、功能开关 | `toggled(bool)`、`isChecked()` |
-| QRadioButton ✅ | ★★★ | 单选按钮，同组互斥 | 几个选项只能选一个：性别、支付方式 | `toggled(bool)`，配合 QButtonGroup |
+| ✅ QPushButton | ★★★ | 普通按钮 | 确定、取消、提交、打开等一切“点击执行”的动作 | `clicked()` |
+| ✅ QCheckBox | ★★★ | 复选框，可多选 | 多个选项互不影响：记住密码、同意协议、功能开关 | `toggled(bool)`、`isChecked()` |
+| ✅ QRadioButton | ★★★ | 单选按钮，同组互斥 | 几个选项只能选一个：性别、支付方式 | `toggled(bool)`，配合 QButtonGroup |
 | QToolButton | ★★ | 工具按钮，通常只有图标 | 工具栏里的图标按钮、带下拉菜单的按钮 | `clicked()`、`setMenu()` |
-| QDialogButtonBox ✅ | ★★ | 一组标准按钮（确定/取消/应用） | 对话框底部，自动按系统习惯排列按钮顺序 | `accepted()`、`rejected()` |
-| QCommandLinkButton ✅ | ★ | 带说明文字的大按钮 | 向导页里“选择下一步做什么” | `clicked()` |
+| ✅ QDialogButtonBox | ★★ | 一组标准按钮（确定/取消/应用） | 对话框底部，自动按系统习惯排列按钮顺序 | `accepted()`、`rejected()` |
+| ✅ QCommandLinkButton | ★ | 带说明文字的大按钮 | 向导页里“选择下一步做什么” | `clicked()` |
 
 **选择建议**
 
@@ -50,11 +50,11 @@
 
 | 控件 | 频率 | 是什么 | 什么时候用 | 常用信号 / 方法 |
 | --- | --- | --- | --- | --- |
-| QLineEdit ✅ | ★★★ | 单行文本框 | 用户名、密码、搜索框、路径 | `text()`、`textChanged()`、`returnPressed()`、`setEchoMode()` |
-| QComboBox ✅ | ★★★ | 下拉选择框 | 从固定的一组选项里选一个：省份、语言、串口号 | `currentIndexChanged()`、`currentText()`、`addItems()` |
-| QSpinBox ✅ | ★★★ | 整数输入框，带上下箭头 | 数量、年龄、端口号等有范围的整数 | `value()`、`valueChanged()`、`setRange()` |
+| ✅ QLineEdit | ★★★ | 单行文本框 | 用户名、密码、搜索框、路径 | `text()`、`textChanged()`、`returnPressed()`、`setEchoMode()` |
+| ✅ QComboBox | ★★★ | 下拉选择框 | 从固定的一组选项里选一个：省份、语言、串口号 | `currentIndexChanged()`、`currentText()`、`addItems()` |
+| ✅ QSpinBox | ★★★ | 整数输入框，带上下箭头 | 数量、年龄、端口号等有范围的整数 | `value()`、`valueChanged()`、`setRange()` |
 | QDoubleSpinBox | ★★ | 小数输入框 | 价格、温度、比例等浮点数 | 同上，另有 `setDecimals()` |
-| QTextEdit ✅ | ★★★ | 多行富文本编辑框 | 备注、聊天输入、显示带格式的内容 | `toPlainText()`、`setHtml()`、`append()` |
+| ✅ QTextEdit | ★★★ | 多行富文本编辑框，已实现格式、对齐、查找和撤销示例 | 备注、聊天输入、显示带格式的内容 | `toPlainText()`、`setHtml()`、`mergeCurrentCharFormat()`、`setAlignment()`、`find()`、`undo()` |
 | QPlainTextEdit | ★★★ | 多行纯文本编辑框 | 日志输出、代码或配置文本，大文本性能比 QTextEdit 好 | `appendPlainText()`、`toPlainText()` |
 | QSlider | ★★ | 滑块 | 音量、亮度、进度拖动等不需要精确数值的调节 | `valueChanged()`、`setRange()` |
 | QDateEdit / QTimeEdit / QDateTimeEdit | ★★ | 日期、时间输入框 | 生日、预约时间、查询的起止日期 | `date()`、`dateChanged()`、`setCalendarPopup(true)` |
@@ -190,8 +190,8 @@ Qt 已经做好的标准弹窗，一行代码就能用。
 
 | 类别 | 控件 |
 | --- | --- |
-| 按钮 | QPushButton ✅、QCheckBox ✅、QRadioButton ✅ |
-| 输入 | QLineEdit ✅、QComboBox ✅、QSpinBox ✅、QTextEdit ✅、QPlainTextEdit |
+| 按钮 | ✅ QPushButton、✅ QCheckBox、✅ QRadioButton |
+| 输入 | ✅ QLineEdit、✅ QComboBox、✅ QSpinBox、✅ QTextEdit、QPlainTextEdit |
 | 显示 | QLabel、QProgressBar |
 | 布局 | QVBoxLayout、QHBoxLayout、QGridLayout、QFormLayout |
 | 容器 | QGroupBox、QTabWidget、QStackedWidget |

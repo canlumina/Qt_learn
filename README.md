@@ -48,3 +48,4 @@ CMake Tools 的配置预设和构建预设均建议选择 `qt6-local`。
 - [QLineEdit：读取输入的文本并显示](docs/2026-11-16-07-QLineEdit读取输入文本.md)
 - [QSpinBox：用数值框调节窗口不透明度](docs/2026-11-17-08-QSpinBox调节窗口不透明度.md)
 - [QTextEdit：多行文本的全选与清除](docs/2026-11-23-09-QTextEdit全选与清除.md)
+- [QTextEdit：富文本编辑器、查找与撤销](docs/2026-11-23-10-QTextEdit富文本编辑器.md)
