@@ -10,6 +10,7 @@
 #include "demos/inputs/lineedit.h"
 #include "demos/inputs/spinbox.h"
 #include "demos/inputs/textedit.h"
+#include "demos/inputs/plaintextedit.h"
 
 #include <QHBoxLayout>
 #include <QListWidget>
@@ -57,6 +58,7 @@ MainWindow::MainWindow(QWidget *parent)
     addDemo("QLineEdit", new LineEdit(this));
     addDemo("QSpinBox", new SpinBox(this));
     addDemo("QTextEdit", new TextEdit(this));
+    addDemo("QPlainTextEdit", new PlainTextEdit(this));
 
     listWidget->setCurrentRow(0);
 }

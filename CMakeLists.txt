@@ -66,6 +66,8 @@ add_executable(learn
     demos/inputs/spinbox.h
     demos/inputs/textedit.cpp
     demos/inputs/textedit.h
+    demos/inputs/plaintextedit.cpp
+    demos/inputs/plaintextedit.h
 )
 
 target_link_libraries(learn
