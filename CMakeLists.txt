@@ -68,6 +68,9 @@ add_executable(learn
     demos/inputs/textedit.h
     demos/inputs/plaintextedit.cpp
     demos/inputs/plaintextedit.h
+    # 布局练习
+    demos/layouts/vboxlayout.cpp
+    demos/layouts/vboxlayout.h
 )
 
 target_link_libraries(learn
