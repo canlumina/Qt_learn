@@ -12,6 +12,7 @@
 #include "demos/inputs/textedit.h"
 #include "demos/inputs/plaintextedit.h"
 #include "demos/layouts/vboxlayout.h"
+#include "demos/layouts/hboxlayout.h"
 
 #include <QHBoxLayout>
 #include <QListWidget>
@@ -61,6 +62,7 @@ MainWindow::MainWindow(QWidget *parent)
     addDemo("QTextEdit", new TextEdit(this));
     addDemo("QPlainTextEdit", new PlainTextEdit(this));
     addDemo("QVBoxLayout", new VBoxLayout(this));
+    addDemo("QHBoxLayout", new HBoxLayout(this));
 
     listWidget->setCurrentRow(0);
 }

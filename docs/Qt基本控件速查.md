@@ -95,7 +95,7 @@
 | 布局 | 频率 | 排列方式 | 什么时候用 |
 | --- | --- | --- | --- |
 | ✅ QVBoxLayout | ★★★ | 从上到下一列，已在 `demos/layouts/` 完成独立练习 | 竖着排的内容；编辑区随窗口分配额外高度 |
-| ✅ QHBoxLayout | ★★★ | 从左到右一行 | 一排按钮、标签加输入框 |
+| ✅ QHBoxLayout | ★★★ | 从左到右一行，已在 `demos/layouts/` 完成独立练习 | 标签、可伸缩输入框和按钮同一行，点击后回显输入 |
 | ✅ QGridLayout | ★★★ | 行列网格，可跨行跨列 | 计算器键盘、较复杂的表单 |
 | ✅ QFormLayout | ★★★ | 两列：左标签、右输入 | 登录、设置、信息填写表单 |
 | ✅ QStackedLayout | ★★ | 多个页面叠在一起，只显示一个 | 一般直接用 QStackedWidget |
@@ -193,7 +193,7 @@ Qt 已经做好的标准弹窗，一行代码就能用。
 | 按钮 | ✅ QPushButton、✅ QCheckBox、✅ QRadioButton |
 | 输入 | ✅ QLineEdit、✅ QComboBox、✅ QSpinBox、✅ QTextEdit、✅ QPlainTextEdit（含本地文件读取/只读切换练习） |
 | 显示 | ✅ QLabel、✅ QProgressBar |
-| 布局 | ✅ QVBoxLayout（已完成纵向排列/伸缩练习）、✅ QHBoxLayout、✅ QGridLayout、✅ QFormLayout |
+| 布局 | ✅ QVBoxLayout（已完成纵向排列/伸缩练习）、✅ QHBoxLayout（已完成横向排列/输入回显练习）、✅ QGridLayout、✅ QFormLayout |
 | 容器 | ✅ QGroupBox、✅ QTabWidget、✅ QStackedWidget |
 | 数据 | ✅ QListWidget、✅ QTableWidget、✅ QTreeWidget |
 | 窗口 | ✅ QMainWindow、✅ QAction、✅ QMessageBox、✅ QFileDialog |
@@ -206,7 +206,7 @@ Qt 已经做好的标准弹窗，一行代码就能用。
 
 完整用途、常见用法、操作步骤、注意事项和源码见 [剩余控件学习路线与教程](examples/README.md)。建议按顺序学习，每页完成“运行 → 修改参数/连接 → 独立复写”：
 
-1. **布局基础**：QVBoxLayout 已完成独立练习，接着实现 QHBoxLayout → QGridLayout → QFormLayout → QSpacerItem；可改变编辑区的伸缩因子比较窗口缩放效果。
+1. **布局基础**：QVBoxLayout、QHBoxLayout 已完成独立练习，接着实现 QGridLayout → QFormLayout → QSpacerItem；可改变编辑区和输入框的伸缩因子比较窗口缩放效果。
 2. **输入与反馈**：先验证 QPlainTextEdit 的文件路径、失败提示和只读切换，再学习 QDoubleSpinBox → QSlider → 日期时间输入 → QLabel → QProgressBar。
 3. **容器与分页**：QWidget → QGroupBox → QTabWidget → QStackedWidget → QScrollArea → QSplitter。
 4. **数据类**：QListWidget → QTableWidget → QTreeWidget，再比较三种 Model/View。

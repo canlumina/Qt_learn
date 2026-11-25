@@ -71,6 +71,8 @@ add_executable(learn
     # 布局练习
     demos/layouts/vboxlayout.cpp
     demos/layouts/vboxlayout.h
+    demos/layouts/hboxlayout.cpp
+    demos/layouts/hboxlayout.h
 )
 
 target_link_libraries(learn

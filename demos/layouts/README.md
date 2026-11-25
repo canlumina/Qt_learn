@@ -5,6 +5,7 @@
 已有练习：
 
 - `vboxlayout.h / .cpp`：QVBoxLayout，从上到下放置说明、编辑区和按钮；通过 `addWidget(editor, 1)` 为编辑区分配额外高度，按钮仅演示排列。见 [开发记录](../../docs/2026-11-25-13-QVBoxLayout纵向布局.md)。
+- `hboxlayout.h / .cpp`：QHBoxLayout，横向排列说明、设备名称输入行和状态标签；输入框分配额外宽度，点击“应用”回显输入。见 [开发记录](../../docs/2026-11-25-14-QHBoxLayout横向布局.md)。
 
 新增练习时：
 
@@ -13,4 +14,4 @@
 3. 在 `mainwindow.cpp` 中包含头文件并调用 `addDemo()` 注册页面。
 4. 维护开发记录、根目录 README 和 `docs/Qt基本控件速查.md`，已有 ✅ 不重复标记。
 
-建议继续练习 QHBoxLayout、QGridLayout、QFormLayout，再组合嵌套布局与弹簧。参考教程见 [布局示例与完整代码](../../docs/examples/layouts.md)。
+QVBoxLayout、QHBoxLayout 已完成独立练习，建议接着实现 QGridLayout、QFormLayout，再组合嵌套布局与弹簧。参考教程见 [布局示例与完整代码](../../docs/examples/layouts.md)。
