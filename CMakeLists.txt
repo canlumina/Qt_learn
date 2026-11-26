@@ -75,6 +75,8 @@ add_executable(learn
     demos/layouts/hboxlayout.h
     demos/layouts/gridlayout.cpp
     demos/layouts/gridlayout.h
+    demos/layouts/formlayout.cpp
+    demos/layouts/formlayout.h
 )
 
 target_link_libraries(learn

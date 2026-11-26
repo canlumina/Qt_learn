@@ -14,6 +14,7 @@
 #include "demos/layouts/vboxlayout.h"
 #include "demos/layouts/hboxlayout.h"
 #include "demos/layouts/gridlayout.h"
+#include "demos/layouts/formlayout.h"
 
 #include <QHBoxLayout>
 #include <QListWidget>
@@ -65,6 +66,7 @@ MainWindow::MainWindow(QWidget *parent)
     addDemo("QVBoxLayout", new VBoxLayout(this));
     addDemo("QHBoxLayout", new HBoxLayout(this));
     addDemo("QGridLayout", new GridLayoutExample(this));
+    addDemo("QFormLayout", new FormLayout(this));
 
     listWidget->setCurrentRow(0);
 }
