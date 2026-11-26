@@ -73,6 +73,8 @@ add_executable(learn
     demos/layouts/vboxlayout.h
     demos/layouts/hboxlayout.cpp
     demos/layouts/hboxlayout.h
+    demos/layouts/gridlayout.cpp
+    demos/layouts/gridlayout.h
 )
 
 target_link_libraries(learn
