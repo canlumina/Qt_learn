@@ -35,7 +35,7 @@ CMake Tools 的配置预设和构建预设均建议选择 `qt6-local`。
 
 - `demos/buttons/`：QPushButton、QRadioButton、QCheckBox、QCommandLinkButton、QDialogButtonBox。
 - `demos/inputs/`：QComboBox、QLineEdit、QSpinBox、QTextEdit、QPlainTextEdit；后续的输入控件也放这里，新增方法见 [目录说明](demos/inputs/README.md)。
-- `demos/layouts/`：QVBoxLayout、QHBoxLayout、QGridLayout，练习纵向/横向排列、网格定位与跨列、控件伸缩及输入回显；新增方法见 [目录说明](demos/layouts/README.md)。
+- `demos/layouts/`：QVBoxLayout、QHBoxLayout、QGridLayout、QFormLayout，练习纵向/横向排列、网格定位与跨列、表单换行、控件伸缩及输入回显；新增方法见 [目录说明](demos/layouts/README.md)。
 
 各示例保持独立的 `.h/.cpp`，构建文件中显式列出源码，主窗口通过 `addDemo()` 注册页面。历史学习日志中的 `demos/xxx` 路径现已迁移为 `demos/buttons/xxx`。
 
@@ -59,3 +59,4 @@ CMake Tools 的配置预设和构建预设均建议选择 `qt6-local`。
 - [QVBoxLayout：纵向排列与编辑区伸缩](docs/2026-11-25-13-QVBoxLayout纵向布局.md)
 - [QHBoxLayout：横向排列与输入回显](docs/2026-11-25-14-QHBoxLayout横向布局.md)
 - [QGridLayout：通道参数与跨列说明](docs/2026-11-26-15-QGridLayout网格布局.md)
+- [QFormLayout：参数表单与换行策略](docs/2026-11-27-16-QFormLayout表单布局.md)

@@ -8,20 +8,20 @@
 
 FormLayout::FormLayout(QWidget *parent)
     : QWidget(parent)
-{ 
+{
     auto *layout = new QVBoxLayout(this);
     layout->setContentsMargins(12, 12, 12, 12);
     layout->setAlignment(Qt::AlignTop);
 
-    auto *description = new QLabel(tr("设备名称、采样周期、备注组成一个可伸缩表单") ,this);
+    auto *description = new QLabel(tr("设备名称、采样周期、备注组成一个可伸缩表单"), this);
     description->setWordWrap(true);
     layout->addWidget(description);
 
     auto *form = new QFormLayout;
 
-    /* 设置表单的行自动换行 */
+    /* 每项的输入控件始终排在标签下方；如需宽度不足时才换行，可使用 WrapLongRows。 */
     form->setRowWrapPolicy(QFormLayout::WrapAllRows);
-    /* 设置表单的列自动扩展 */
+    /* 允许非固定宽度的输入控件随表单宽度扩展。 */
     form->setFieldGrowthPolicy(QFormLayout::AllNonFixedFieldsGrow);
 
     auto *name = new QLineEdit(this);
