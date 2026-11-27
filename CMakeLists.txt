@@ -77,6 +77,9 @@ add_executable(learn
     demos/layouts/gridlayout.h
     demos/layouts/formlayout.cpp
     demos/layouts/formlayout.h
+    # 显示控件
+    demos/display/lable.cpp
+    demos/display/lable.h
 )
 
 target_link_libraries(learn
