@@ -115,7 +115,7 @@
 
 | 控件 | 频率 | 是什么 | 什么时候用 | 常用方法 |
 | --- | --- | --- | --- | --- |
-| ✅ QWidget | ★★★ | 最基础的空白容器，所有控件的基类 | 自定义页面、把一组控件包成一个整体 | `setLayout()` |
+| ✅ QWidget | ★★★ | 最基础的空白容器，所有控件的基类，已在 `demos/containers/` 完成独立练习 | 自定义页面；本练习通过复选框整体启用或禁用参数区域 | `setLayout()`、`setEnabled()`、`isEnabled()` |
 | ✅ QGroupBox | ★★★ | 带标题的分组框 | 把相关设置圈在一起，给单选按钮分组 | `setTitle()`、`setCheckable()` |
 | ✅ QTabWidget | ★★★ | 选项卡 | 设置窗口的多个分页 | `addTab()`、`currentChanged()` |
 | ✅ QStackedWidget | ★★★ | 堆叠页面，没有自带的切换按钮 | 左侧列表切换右侧页面（`learn` 的主窗口就是这个结构）、向导 | `addWidget()`、`setCurrentIndex()` |
@@ -194,7 +194,7 @@ Qt 已经做好的标准弹窗，一行代码就能用。
 | 输入 | ✅ QLineEdit、✅ QComboBox、✅ QSpinBox、✅ QTextEdit、✅ QPlainTextEdit（含本地文件读取/只读切换练习） |
 | 显示 | ✅ QLabel（已完成可复制文字/色块图片切换练习）、✅ QProgressBar（已完成模拟进度/忙碌模式/重新开始练习）；扩展练习：✅ QGraphicsView（已完成图形选择/拖动/缩放练习） |
 | 布局 | ✅ QVBoxLayout（已完成纵向排列/伸缩练习）、✅ QHBoxLayout（已完成横向排列/输入回显练习）、✅ QGridLayout（已完成网格定位/跨列练习）、✅ QFormLayout（已完成参数表单/换行练习） |
-| 容器 | ✅ QGroupBox、✅ QTabWidget、✅ QStackedWidget；扩展练习：✅ QFrame（已完成带边框容器/水平分隔线练习） |
+| 容器 | ✅ QGroupBox、✅ QTabWidget、✅ QStackedWidget；补充练习：✅ QWidget（已完成参数区域整体启用/禁用练习）、✅ QFrame（已完成带边框容器/水平分隔线练习） |
 | 数据 | ✅ QListWidget、✅ QTableWidget、✅ QTreeWidget |
 | 窗口 | ✅ QMainWindow、✅ QAction、✅ QMessageBox、✅ QFileDialog |
 
@@ -208,7 +208,7 @@ Qt 已经做好的标准弹窗，一行代码就能用。
 
 1. **布局基础**：QVBoxLayout、QHBoxLayout、QGridLayout、QFormLayout 已完成独立练习，接着实现 QSpacerItem；可比较表单的换行策略，以及不同列伸缩因子和跨行、跨列的效果。
 2. **输入与反馈**：QLabel、QProgressBar、QGraphicsView、QFrame 已完成独立练习，覆盖文字/图片、模拟进度、图形交互、边框与水平分隔线，显示类下一项可学习 QTextBrowser；输入类继续验证 QPlainTextEdit 的文件路径、失败提示和只读切换，再学习 QDoubleSpinBox → QSlider → 日期时间输入。
-3. **容器与分页**：QFrame 已完成带边框容器练习，继续按 QWidget → QGroupBox → QTabWidget → QStackedWidget → QScrollArea → QSplitter 学习。
+3. **容器与分页**：QWidget 已完成参数区域整体启用/禁用练习，QFrame 已完成带边框容器练习，接着按 QGroupBox → QTabWidget → QStackedWidget → QScrollArea → QSplitter 学习。
 4. **数据类**：QListWidget → QTableWidget → QTreeWidget，再比较三种 Model/View。
 5. **对话框**：QMessageBox → QInputDialog → QDialog → QFileDialog，再学习颜色、字体和进度对话框。
 6. **窗口命令**：QAction → 菜单 → 工具栏 → 状态栏 → QMainWindow。

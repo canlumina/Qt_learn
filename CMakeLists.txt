@@ -86,6 +86,10 @@ add_executable(learn
     demos/display/graphicsview.h
     demos/display/frame.cpp
     demos/display/frame.h
+
+    # 容器控件
+    demos/containers/widget.cpp
+    demos/containers/widget.h
 )
 
 target_link_libraries(learn

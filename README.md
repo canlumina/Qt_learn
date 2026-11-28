@@ -37,6 +37,7 @@ CMake Tools 的配置预设和构建预设均建议选择 `qt6-local`。
 - `demos/inputs/`：QComboBox、QLineEdit、QSpinBox、QTextEdit、QPlainTextEdit；后续的输入控件也放这里，新增方法见 [目录说明](demos/inputs/README.md)。
 - `demos/layouts/`：QVBoxLayout、QHBoxLayout、QGridLayout、QFormLayout，练习纵向/横向排列、网格定位与跨列、表单换行、控件伸缩及输入回显；新增方法见 [目录说明](demos/layouts/README.md)。
 - `demos/display/`：QLabel、QProgressBar、QGraphicsView、QFrame，练习文字与图片显示、模拟进度、图形交互、带边框容器与水平分隔线；新增方法见 [目录说明](demos/display/README.md)。
+- `demos/containers/`：QWidget，练习通过父容器整体启用或禁用参数区域；新增方法见 [目录说明](demos/containers/README.md)。
 
 各示例保持独立的 `.h/.cpp`，构建文件中显式列出源码，主窗口通过 `addDemo()` 注册页面。历史学习日志中的 `demos/xxx` 路径现已迁移为 `demos/buttons/xxx`。
 
@@ -65,3 +66,4 @@ CMake Tools 的配置预设和构建预设均建议选择 `qt6-local`。
 - [QProgressBar：模拟进度、忙碌模式与重新开始](docs/2026-11-28-18-QProgressBar进度与忙碌模式.md)
 - [QGraphicsView：图形选择、拖动与视图缩放](docs/2026-11-28-19-QGraphicsView图形拖动与缩放.md)
 - [QFrame：带边框容器与水平分隔线](docs/2026-11-28-20-QFrame边框与分隔线.md)
+- [QWidget：参数区域整体启用与禁用](docs/2026-11-28-21-QWidget参数区域启用与禁用.md)
