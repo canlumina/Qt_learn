@@ -84,7 +84,7 @@
 | ✅ QLCDNumber | ★ | 仿液晶数码管 | 时钟、计数器、仪表读数 | `display()` |
 | ✅ QCalendarWidget | ★ | 月历 | 需要直接展示整个月历的页面 | `selectedDate()`、`clicked()` |
 | ✅ QGraphicsView | ★★ | 图形视图，已在 `demos/display/` 完成独立练习 | 绘图、流程图；本练习选择、拖动矩形和椭圆，并缩放视图 | 配合 QGraphicsScene 使用；`scale()`、`resetTransform()` |
-| ✅ QFrame（Line） | ★★ | 水平或垂直分隔线 | 把界面分成几块 | Designer 里直接拖 |
+| ✅ QFrame（Line） | ★★ | 水平或垂直分隔线，已在 `demos/display/` 完成水平线练习 | 把界面分成几块 | `setFrameShape(QFrame::HLine)`、`setFrameShadow()` |
 
 ---
 
@@ -120,7 +120,7 @@
 | ✅ QTabWidget | ★★★ | 选项卡 | 设置窗口的多个分页 | `addTab()`、`currentChanged()` |
 | ✅ QStackedWidget | ★★★ | 堆叠页面，没有自带的切换按钮 | 左侧列表切换右侧页面（`learn` 的主窗口就是这个结构）、向导 | `addWidget()`、`setCurrentIndex()` |
 | ✅ QScrollArea | ★★ | 滚动区域 | 内容超出窗口大小时 | `setWidget()`、`setWidgetResizable(true)` |
-| ✅ QFrame | ★★ | 带边框的容器 | 需要边框或做分隔线 | `setFrameShape()` |
+| ✅ QFrame | ★★ | 带边框的容器，已在 `demos/display/` 完成独立练习 | 用 StyledPanel 包住内容，用 HLine 分隔上下区域 | `setFrameShape()`、`setFrameShadow()` |
 | ✅ QSplitter | ★★ | 分割器，中间可拖动 | 左右或上下分栏，让用户调整比例 | `addWidget()`、`setSizes()` |
 | ✅ QToolBox | ★ | 抽屉式折叠面板 | 类似旧版 QQ 的好友分组 | `addItem()` |
 | ✅ QDockWidget | ★★ | 可停靠、可浮动的面板 | IDE 风格的侧边栏，只能用在 QMainWindow 里 | `addDockWidget()` |
@@ -194,7 +194,7 @@ Qt 已经做好的标准弹窗，一行代码就能用。
 | 输入 | ✅ QLineEdit、✅ QComboBox、✅ QSpinBox、✅ QTextEdit、✅ QPlainTextEdit（含本地文件读取/只读切换练习） |
 | 显示 | ✅ QLabel（已完成可复制文字/色块图片切换练习）、✅ QProgressBar（已完成模拟进度/忙碌模式/重新开始练习）；扩展练习：✅ QGraphicsView（已完成图形选择/拖动/缩放练习） |
 | 布局 | ✅ QVBoxLayout（已完成纵向排列/伸缩练习）、✅ QHBoxLayout（已完成横向排列/输入回显练习）、✅ QGridLayout（已完成网格定位/跨列练习）、✅ QFormLayout（已完成参数表单/换行练习） |
-| 容器 | ✅ QGroupBox、✅ QTabWidget、✅ QStackedWidget |
+| 容器 | ✅ QGroupBox、✅ QTabWidget、✅ QStackedWidget；扩展练习：✅ QFrame（已完成带边框容器/水平分隔线练习） |
 | 数据 | ✅ QListWidget、✅ QTableWidget、✅ QTreeWidget |
 | 窗口 | ✅ QMainWindow、✅ QAction、✅ QMessageBox、✅ QFileDialog |
 
@@ -207,8 +207,8 @@ Qt 已经做好的标准弹窗，一行代码就能用。
 完整用途、常见用法、操作步骤、注意事项和源码见 [剩余控件学习路线与教程](examples/README.md)。建议按顺序学习，每页完成“运行 → 修改参数/连接 → 独立复写”：
 
 1. **布局基础**：QVBoxLayout、QHBoxLayout、QGridLayout、QFormLayout 已完成独立练习，接着实现 QSpacerItem；可比较表单的换行策略，以及不同列伸缩因子和跨行、跨列的效果。
-2. **输入与反馈**：QLabel、QProgressBar、QGraphicsView 已完成独立练习，覆盖文字/图片显示、模拟进度、忙碌模式、图形拖动与视图缩放，显示类下一项可学习 QTextBrowser；输入类继续验证 QPlainTextEdit 的文件路径、失败提示和只读切换，再学习 QDoubleSpinBox → QSlider → 日期时间输入。
-3. **容器与分页**：QWidget → QGroupBox → QTabWidget → QStackedWidget → QScrollArea → QSplitter。
+2. **输入与反馈**：QLabel、QProgressBar、QGraphicsView、QFrame 已完成独立练习，覆盖文字/图片、模拟进度、图形交互、边框与水平分隔线，显示类下一项可学习 QTextBrowser；输入类继续验证 QPlainTextEdit 的文件路径、失败提示和只读切换，再学习 QDoubleSpinBox → QSlider → 日期时间输入。
+3. **容器与分页**：QFrame 已完成带边框容器练习，继续按 QWidget → QGroupBox → QTabWidget → QStackedWidget → QScrollArea → QSplitter 学习。
 4. **数据类**：QListWidget → QTableWidget → QTreeWidget，再比较三种 Model/View。
 5. **对话框**：QMessageBox → QInputDialog → QDialog → QFileDialog，再学习颜色、字体和进度对话框。
 6. **窗口命令**：QAction → 菜单 → 工具栏 → 状态栏 → QMainWindow。

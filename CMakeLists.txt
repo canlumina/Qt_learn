@@ -84,6 +84,8 @@ add_executable(learn
     demos/display/progressbar.h
     demos/display/graphicsview.cpp
     demos/display/graphicsview.h
+    demos/display/frame.cpp
+    demos/display/frame.h
 )
 
 target_link_libraries(learn
