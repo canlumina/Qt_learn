@@ -82,6 +82,8 @@ add_executable(learn
     demos/display/lable.h
     demos/display/progressbar.cpp
     demos/display/progressbar.h
+    demos/display/graphicsview.cpp
+    demos/display/graphicsview.h
 )
 
 target_link_libraries(learn

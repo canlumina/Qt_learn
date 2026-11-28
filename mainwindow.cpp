@@ -17,6 +17,7 @@
 #include "demos/layouts/formlayout.h"
 #include "demos/display/lable.h"
 #include "demos/display/progressbar.h"
+#include "demos/display/graphicsview.h"
 
 #include <QHBoxLayout>
 #include <QListWidget>
@@ -71,6 +72,7 @@ MainWindow::MainWindow(QWidget *parent)
     addDemo("QFormLayout", new FormLayout(this));
     addDemo("QLabel", new Lable(this));
     addDemo("QProgressBar", new ProgressBar(this));
+    addDemo("QGraphicsView", new GraphicsView(this));
 
     listWidget->setCurrentRow(0);
 }
