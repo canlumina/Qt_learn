@@ -79,7 +79,7 @@
 | 控件 | 频率 | 是什么 | 什么时候用 | 常用方法 |
 | --- | --- | --- | --- | --- |
 | ✅ QLabel | ★★★ | 标签，显示文字或图片，已在 `demos/display/` 完成独立练习 | 说明文字、状态提示；本练习显示可复制纯文本和可切换颜色的图片 | `setText()`、`setPixmap()`、`setWordWrap()`、`setTextInteractionFlags()` |
-| ✅ QProgressBar | ★★★ | 进度条 | 下载、复制、加载等耗时操作 | `setValue()`、`setRange()`；`setRange(0,0)` 表示忙碌状态 |
+| ✅ QProgressBar | ★★★ | 进度条，已在 `demos/display/` 完成独立练习 | 耗时操作的进度反馈；本练习用定时器模拟进度，支持忙碌模式与重新开始 | `setValue()`、`setRange()`；`setRange(0,0)` 表示忙碌状态 |
 | ✅ QTextBrowser | ★★ | 只读富文本，支持超链接 | 帮助文档、更新说明 | `setHtml()`、`anchorClicked()` |
 | ✅ QLCDNumber | ★ | 仿液晶数码管 | 时钟、计数器、仪表读数 | `display()` |
 | ✅ QCalendarWidget | ★ | 月历 | 需要直接展示整个月历的页面 | `selectedDate()`、`clicked()` |
@@ -192,7 +192,7 @@ Qt 已经做好的标准弹窗，一行代码就能用。
 | --- | --- |
 | 按钮 | ✅ QPushButton、✅ QCheckBox、✅ QRadioButton |
 | 输入 | ✅ QLineEdit、✅ QComboBox、✅ QSpinBox、✅ QTextEdit、✅ QPlainTextEdit（含本地文件读取/只读切换练习） |
-| 显示 | ✅ QLabel（已完成可复制文字/色块图片切换练习）、✅ QProgressBar |
+| 显示 | ✅ QLabel（已完成可复制文字/色块图片切换练习）、✅ QProgressBar（已完成模拟进度/忙碌模式/重新开始练习） |
 | 布局 | ✅ QVBoxLayout（已完成纵向排列/伸缩练习）、✅ QHBoxLayout（已完成横向排列/输入回显练习）、✅ QGridLayout（已完成网格定位/跨列练习）、✅ QFormLayout（已完成参数表单/换行练习） |
 | 容器 | ✅ QGroupBox、✅ QTabWidget、✅ QStackedWidget |
 | 数据 | ✅ QListWidget、✅ QTableWidget、✅ QTreeWidget |
@@ -207,7 +207,7 @@ Qt 已经做好的标准弹窗，一行代码就能用。
 完整用途、常见用法、操作步骤、注意事项和源码见 [剩余控件学习路线与教程](examples/README.md)。建议按顺序学习，每页完成“运行 → 修改参数/连接 → 独立复写”：
 
 1. **布局基础**：QVBoxLayout、QHBoxLayout、QGridLayout、QFormLayout 已完成独立练习，接着实现 QSpacerItem；可比较表单的换行策略，以及不同列伸缩因子和跨行、跨列的效果。
-2. **输入与反馈**：QLabel 已完成可复制文字、自动换行与色块图片切换的独立练习，显示类下一项可学习 QProgressBar；输入类继续验证 QPlainTextEdit 的文件路径、失败提示和只读切换，再学习 QDoubleSpinBox → QSlider → 日期时间输入。
+2. **输入与反馈**：QLabel、QProgressBar 已完成独立练习，覆盖文字/图片显示、模拟进度、忙碌模式与重新开始，显示类下一项可学习 QTextBrowser；输入类继续验证 QPlainTextEdit 的文件路径、失败提示和只读切换，再学习 QDoubleSpinBox → QSlider → 日期时间输入。
 3. **容器与分页**：QWidget → QGroupBox → QTabWidget → QStackedWidget → QScrollArea → QSplitter。
 4. **数据类**：QListWidget → QTableWidget → QTreeWidget，再比较三种 Model/View。
 5. **对话框**：QMessageBox → QInputDialog → QDialog → QFileDialog，再学习颜色、字体和进度对话框。

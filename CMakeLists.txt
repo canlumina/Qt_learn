@@ -80,6 +80,8 @@ add_executable(learn
     # 显示控件
     demos/display/lable.cpp
     demos/display/lable.h
+    demos/display/progressbar.cpp
+    demos/display/progressbar.h
 )
 
 target_link_libraries(learn
